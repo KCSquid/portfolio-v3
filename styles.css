@@ -126,7 +126,7 @@ a {
   will-change: transform;
   content: "";
 
-  background-image: url(kcsquid.svg);
+  background-image: url(assets/kcsquid.svg);
   background-size: cover;
   background-position: center;
   transition: 0.8s ease;
@@ -172,7 +172,7 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(pfp.jpg);
+  background-image: url(assets/pfp.jpg);
   background-size: cover;
   background-position: center;
   transition: 0.8s ease;

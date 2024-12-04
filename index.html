@@ -1,517 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="user-scalable=no, width=device-width, initial-scale=1.0"
-    />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <title>Jahvon Cockburn</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>Jahvon Cockburn</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <div class="radial-gradient"></div>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-    <div id="bubbles"></div>
+  <script src="index.js"></script>
+</head>
 
-    <div class="centerInfo">
-      <h3><span id="greeting">Hey</span>! I'm,</h3>
-      <h1>
-        <span class="pretty-alt-hover" onclick="showKCSquid()">Jahvon</span>
-        <br id="responsiveBreak" />Cockburn
-      </h1>
-      <h2>Software Engineer</h2>
-      <a id="learnMore" role="button" onclick="elScroll('.about')"
-        >Learn more about me <i class="fa-solid fa-arrow-right"></i
-      ></a>
+<body>
+  <div class="radial-gradient"></div>
 
-      <div class="socials">
-        <a href="https://github.com/KCSquid/" target="_blank" rel="noreferrer"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/kcsquid/"
-          target="_blank"
-          rel="noreferrer"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="https://x.com/KCSquid_" target="_blank" rel="noreferrer"
-          ><i class="fa-brands fa-x-twitter"></i
-        ></a>
-        <a
-          href="https://www.tiktok.com/@kcsquid.0"
-          target="_blank"
-          rel="noreferrer"
-          ><i class="fa-brands fa-tiktok"></i
-        ></a>
-        <a
-          href="https://stackoverflow.com/users/14709272/kingcodesquid"
-          target="_blank"
-          rel="noreferrer"
-          ><i class="fa-brands fa-stack-overflow"></i
-        ></a>
+  <div id="bubbles"></div>
+
+  <div class="centerInfo">
+    <h3><span id="greeting">Hey</span>! I'm,</h3>
+    <h1>
+      <span class="pretty-alt-hover" onclick="showKCSquid()">Jahvon</span>
+      <br id="responsiveBreak" />Cockburn
+    </h1>
+    <h2>Software Engineer</h2>
+    <a id="learnMore" role="button" onclick="elScroll('.about')">Learn more about me <i
+        class="fa-solid fa-arrow-right"></i></a>
+
+    <div class="socials">
+      <a href="https://github.com/KCSquid/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/kcsquid/" target="_blank" rel="noreferrer"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/KCSquid_" target="_blank" rel="noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.tiktok.com/@kcsquid.0" target="_blank" rel="noreferrer"><i
+          class="fa-brands fa-tiktok"></i></a>
+      <a href="https://stackoverflow.com/users/14709272/kingcodesquid" target="_blank" rel="noreferrer"><i
+          class="fa-brands fa-stack-overflow"></i></a>
+    </div>
+  </div>
+
+  <div class="pfp">
+    <div class="kcsquid"></div>
+  </div>
+
+  <i class="fa-solid fa-angle-down scrollArrow" onclick="elScroll('.about')"></i>
+
+  <div class="about">
+    <div class="leftInfo">
+      <h1>About Me</h1>
+      <p>
+        Hey, I'm
+        <span class="pretty">Jahvon</span> (/juh-VAHN/)
+        <span class="pretty">(Aka. KCSquid)</span>, a 15 year old
+        <span class="pretty">developer</span> from Canada. I've been
+        programming for over
+        <span class="pretty">6 years</span>
+        in languages like
+        <span class="pretty">Python, Javascript, Java, Go, C++ and Rust</span>
+        but I'm always trying more!
+      </p>
+
+      <div class="categories">
+        <h2>
+          <a role="button" id="skillsTitle" onclick="setReading('#skills')" reading>Skills</a>
+        </h2>
+        <h2>
+          <a role="button" id="experienceTitle" onclick="setReading('#experience')">Experience</a>
+        </h2>
+        <h2>
+          <a role="button" id="languagesTitle" onclick="setReading('#languages')">Languages</a>
+        </h2>
       </div>
-    </div>
-
-    <div class="pfp">
-      <div class="kcsquid"></div>
-    </div>
-
-    <i
-      class="fa-solid fa-angle-down scrollArrow"
-      onclick="elScroll('.about')"
-    ></i>
-
-    <div class="about">
-      <div class="leftInfo">
-        <h1>About Me</h1>
-        <p>
-          Hey, I'm
-          <span class="pretty">Jahvon</span> (/juh-VAHN/)
-          <span class="pretty">(Aka. KCSquid)</span>, a 15 year old
-          <span class="pretty">developer</span> from Canada. I've been
-          programming for over
-          <span class="pretty">6 years</span>
-          in languages like
-          <span class="pretty">Python, Javascript, Java, Go, C++ and Rust</span>
-          but I'm always trying more!
+      <div id="skills" class="category" reading>
+        <p class="white">
+          <span class="pretty-alt">Frontend</span> ~ Website/Webapp design &
+          creation.
+          <br />
+          <span class="pretty">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"><i
+                class="fa-brands fa-html5" style="--hoverColor: #eb4d2d"></i></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"><i
+                class="fa-brands fa-css3-alt" style="--hoverColor: #2c62eb"></i></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><i
+                class="fa-brands fa-js" style="--hoverColor: #f7e148"></i></a>
+          </span>
+          <br /><br />
+          <span class="pretty-alt">Apps & Video Games</span> ~ Multiple apps &
+          games with React Native, Android Studio & Unity
+          <br />
+          <span class="pretty">
+            <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"><i class="fa-brands fa-react"
+                style="--hoverColor: #56dbf9"></i></a>
+            <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><i
+                class="devicon-typescript-plain" style="--hoverColor: #007dcf"></i></a>
+            <a href="https://developer.android.com/studio" target="_blank" rel="noreferrer">
+              <i class="devicon-androidstudio-plain" style="--hoverColor: #45b35f"></i>
+            </a>
+            <a href="https://www.java.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-java"
+                style="--hoverColor: #fd9c3a"></i></a>
+            <a href="https://kotlinlang.org/" target="_blank" rel="noreferrer"><i class="devicon-kotlin-plain"
+                style="--hoverColor: #af2eea"></i></a>
+            <a href="https://unity.com/" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-unity" style="--hoverColor: #848484"></i>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank" rel="noreferrer">
+              <i class="devicon-csharp-plain" style="--hoverColor: #440090"></i>
+            </a>
+          </span>
+          <br /><br />
+          <span class="pretty-alt">Backend</span> ~ Database, API Endpoints &
+          Calls, etc.
+          <br />
+          <span class="pretty">
+            <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" rel="noreferrer">
+              <i class="devicon-azuresqldatabase-plain" style="--hoverColor: #267ac5"></i>
+            </a>
+            <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+              <i class="devicon-mongodb-plain" style="--hoverColor: #46ae51"></i>
+            </a>
+            <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-python" style="--hoverColor: #ffdd64"></i>
+            </a>
+            <a href="https://nodejs.org/en" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-node-js" style="--hoverColor: #73b36f"></i>
+            </a>
+          </span>
         </p>
-
-        <div class="categories">
-          <h2>
-            <a
-              role="button"
-              id="skillsTitle"
-              onclick="setReading('#skills')"
-              reading
-              >Skills</a
-            >
-          </h2>
-          <h2>
-            <a
-              role="button"
-              id="experienceTitle"
-              onclick="setReading('#experience')"
-              >Experience</a
-            >
-          </h2>
-          <h2>
-            <a
-              role="button"
-              id="languagesTitle"
-              onclick="setReading('#languages')"
-              >Languages</a
-            >
-          </h2>
-        </div>
-        <div id="skills" class="category" reading>
-          <p class="white">
-            <span class="pretty-alt">Frontend</span> ~ Website/Webapp design &
-            creation.
-            <br />
-            <span class="pretty">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                target="_blank"
-                rel="noreferrer"
-                ><i class="fa-brands fa-html5" style="--hoverColor: #eb4d2d"></i
-              ></a>
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                target="_blank"
-                rel="noreferrer"
-                ><i
-                  class="fa-brands fa-css3-alt"
-                  style="--hoverColor: #2c62eb"
-                ></i
-              ></a>
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                target="_blank"
-                rel="noreferrer"
-                ><i class="fa-brands fa-js" style="--hoverColor: #f7e148"></i
-              ></a>
-            </span>
-            <br /><br />
-            <span class="pretty-alt">Apps & Video Games</span> ~ Multiple apps &
-            games with React Native, Android Studio & Unity
-            <br />
-            <span class="pretty">
-              <a
-                href="https://reactnative.dev/"
-                target="_blank"
-                rel="noreferrer"
-                ><i class="fa-brands fa-react" style="--hoverColor: #56dbf9"></i
-              ></a>
-              <a
-                href="https://www.typescriptlang.org/"
-                target="_blank"
-                rel="noreferrer"
-                ><i
-                  class="devicon-typescript-plain"
-                  style="--hoverColor: #007dcf"
-                ></i
-              ></a>
-              <a
-                href="https://developer.android.com/studio"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i
-                  class="devicon-androidstudio-plain"
-                  style="--hoverColor: #45b35f"
-                ></i>
-              </a>
-              <a href="https://www.java.com/" target="_blank" rel="noreferrer"
-                ><i class="fa-brands fa-java" style="--hoverColor: #fd9c3a"></i
-              ></a>
-              <a href="https://kotlinlang.org/" target="_blank" rel="noreferrer"
-                ><i
-                  class="devicon-kotlin-plain"
-                  style="--hoverColor: #af2eea"
-                ></i
-              ></a>
-              <a href="https://unity.com/" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-unity" style="--hoverColor: #848484"></i>
-              </a>
-              <a
-                href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i
-                  class="devicon-csharp-plain"
-                  style="--hoverColor: #440090"
-                ></i>
-              </a>
-            </span>
-            <br /><br />
-            <span class="pretty-alt">Backend</span> ~ Database, API Endpoints &
-            Calls, etc.
-            <br />
-            <span class="pretty">
-              <a
-                href="https://en.wikipedia.org/wiki/SQL"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i
-                  class="devicon-azuresqldatabase-plain"
-                  style="--hoverColor: #267ac5"
-                ></i>
-              </a>
-              <a
-                href="https://www.mongodb.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i
-                  class="devicon-mongodb-plain"
-                  style="--hoverColor: #46ae51"
-                ></i>
-              </a>
-              <a
-                href="https://www.python.org/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i
-                  class="fa-brands fa-python"
-                  style="--hoverColor: #ffdd64"
-                ></i>
-              </a>
-              <a href="https://nodejs.org/en" target="_blank" rel="noreferrer">
-                <i
-                  class="fa-brands fa-node-js"
-                  style="--hoverColor: #73b36f"
-                ></i>
-              </a>
-            </span>
-          </p>
-          <a role="button" onclick="elScroll('.projectsPage')" class="underline"
-            ><h2><span class="pretty">View my projects</span></h2></a
-          >
-        </div>
-        <div id="experience" class="category">
-          <p class="white">
-            <span class="pretty-alt">2023 - Now</span><br />Active Volunteering
-            and Team Leadership (<span class="pretty"
-              ><a
-                href="https://www.mississaugachessclub.ca/"
-                target="_blank"
-                rel="noreferrer"
-                class="underline"
-                >MCC</a
-              ></span
-            >)<br /><br />
-            <span class="pretty-alt">2022 - 2024</span><br />Tutoring/Teaching
-            coding to all ages (<span class="pretty">Python</span>)<br /><br />
-            <span class="pretty-alt">Late 2021 - Mid 2023</span><br />Leading
-            coding classes for
-            <span class="pretty">over 6 seperate</span> schools (<span
-              class="pretty"
-              >grades 4 - 11</span
-            >) in my area
-          </p>
-          <a role="button" onclick="elScroll('.projectsPage')" class="underline"
-            ><h2><span class="pretty">View my projects</span></h2></a
-          >
-        </div>
-        <div id="languages" class="category">
-          <p class="white">
-            <span class="pretty-alt">English</span><br />
-            I was born (& live) in Canada as a native English speaker (<span
-              class="pretty"
-              >Fluent/Native/CEFR C2</span
-            >) <br /><br />
-            <span class="pretty-alt">French</span><br />
-            I grew up in Québec for some years of my early life, learning early
-            with French Immersion and later gaining a high level of
-            understanding in French (<span class="pretty">CEFR B1</span>).
-            <br /><br />
-            <span class="pretty-alt">German, Misc.</span><br />
-            I have an 915+ day streak on Duolingo, practicing German (<span
-              class="pretty"
-              >CEFR A2</span
-            >) along with other languages on the side such as Russian (<span
-              class="pretty"
-              >CEFR A1</span
-            >).
-          </p>
-          <a role="button" onclick="elScroll('.projectsPage')" class="underline"
-            ><h2><span class="pretty">View my projects</span></h2></a
-          >
-        </div>
+        <a role="button" onclick="elScroll('.projectsPage')" class="underline">
+          <h2><span class="pretty">View my projects</span></h2>
+        </a>
       </div>
+      <div id="experience" class="category">
+        <p class="white">
+          <span class="pretty-alt">2023 - Now</span><br />Active Volunteering
+          and Team Leadership (<span class="pretty"><a href="https://www.mississaugachessclub.ca/" target="_blank"
+              rel="noreferrer" class="underline">MCC</a></span>)<br /><br />
+          <span class="pretty-alt">2022 - 2024</span><br />Tutoring/Teaching
+          coding to all ages (<span class="pretty">Python</span>)<br /><br />
+          <span class="pretty-alt">Late 2021 - Mid 2023</span><br />Leading
+          coding classes for
+          <span class="pretty">over 6 seperate</span> schools (<span class="pretty">grades 4 - 11</span>) in my area
+        </p>
+        <a role="button" onclick="elScroll('.projectsPage')" class="underline">
+          <h2><span class="pretty">View my projects</span></h2>
+        </a>
+      </div>
+      <div id="languages" class="category">
+        <p class="white">
+          <span class="pretty-alt">English</span><br />
+          I was born (& live) in Canada as a native English speaker (<span class="pretty">Fluent/Native/CEFR C2</span>)
+          <br /><br />
+          <span class="pretty-alt">French</span><br />
+          I grew up in Québec for some years of my early life, learning early
+          with French Immersion and later gaining a high level of
+          understanding in French (<span class="pretty">CEFR B1</span>).
+          <br /><br />
+          <span class="pretty-alt">German, Misc.</span><br />
+          I have an 915+ day streak on Duolingo, practicing German (<span class="pretty">CEFR A2</span>) along with
+          other languages on the side such as Russian (<span class="pretty">CEFR A1</span>).
+        </p>
+        <a role="button" onclick="elScroll('.projectsPage')" class="underline">
+          <h2><span class="pretty">View my projects</span></h2>
+        </a>
+      </div>
+    </div>
 
-      <div class="duoStats">
-        <h2 id="duoTitle">Duolingo Stats</h2>
-        <div class="streakContainer">
-          <!-- <img
+    <div class="duoStats">
+      <h2 id="duoTitle">Duolingo Stats</h2>
+      <div class="streakContainer">
+        <!-- <img
             src="https://d35aaqx5ub95lt.cloudfront.net/images/profile/8a6dca76019d059a81c4c7c1145aa7a4.svg"
             alt="duolingo streak icon"
             id="streakIcon"
           /> -->
-          <!-- <h2>Current Streak: <span id="streakCount">--</span></h2> -->
-          <h2>
-            Blocked by CORS (unofficial API),<br />see my profile below instead!
-          </h2>
-        </div>
-        <!-- <div class="streakContainer">
+        <!-- <h2>Current Streak: <span id="streakCount">--</span></h2> -->
+        <h2>
+          Blocked by CORS (unofficial API),<br />see my profile below instead!
+        </h2>
+      </div>
+      <!-- <div class="streakContainer">
           <img
             src="https://d35aaqx5ub95lt.cloudfront.net/vendor/5187f6694476a769d4a4e28149867e3e.svg"
             alt="duolingo globe icon"
           />
           <h2>Last Extended: <span id="streakExtended">--</span></h2>
         </div> -->
-        <div class="streakInfo">
-          <a
-            href="https://preview.duolingo.com/profile/KCSquid"
-            target="_blank"
-            rel="noreferrer"
-            ><img
-              src="https://simg-ssl.duolingo.com/ssr-avatars/903879009/SSR-mpmLX9XbxU/medium"
-              alt="my duolingo avatar"
-              id="duoAvatar"
-              role="button"
-              href="https://preview.duolingo.com/profile/KCSquid"
-          /></a>
+      <div class="streakInfo">
+        <a href="https://preview.duolingo.com/profile/KCSquid" target="_blank" rel="noreferrer"><img
+            src="https://simg-ssl.duolingo.com/ssr-avatars/903879009/SSR-mpmLX9XbxU/medium" alt="my duolingo avatar"
+            id="duoAvatar" role="button" href="https://preview.duolingo.com/profile/KCSquid" /></a>
 
-          <h3>
-            <a
-              id="streakLink"
-              href="https://preview.duolingo.com/profile/KCSquid"
-              target="_blank"
-              rel="noreferrer"
-              >View my profile</a
-            >
-          </h3>
-        </div>
+        <h3>
+          <a id="streakLink" href="https://preview.duolingo.com/profile/KCSquid" target="_blank" rel="noreferrer">View
+            my profile</a>
+        </h3>
       </div>
     </div>
+  </div>
 
-    <div class="projectsPage">
-      <div class="projects">
-        <h1 id="projectTitle">Projects</h1>
-        <div class="project">
-          <h1>Hangman</h1>
-          <h3>
-            Normal Hangman, but you're actually learning new words.
-            <br />(<span class="pretty">Python</span>) <br /><br />
-            <a
-              href="https://github.com/KCSquid/hangman"
-              target="_blank"
-              rel="noreferrer"
-              >View Repo</a
-            >
-          </h3>
-        </div>
-        <div class="project">
-          <h1>Unbeatable TicTacToe</h1>
-          <h3>
-            Unbeatable TicTacToe game using the minimax algorithm.
-            <br />(<span class="pretty">HTML/CSS/JS</span>) <br /><br />
-            <a href="https://tictactoe.kcsquid.xyz"
-              ><!--
+  <div class="projectsPage">
+    <div class="projects">
+      <h1 id="projectTitle">Projects</h1>
+      <div class="project">
+        <h1>Hangman</h1>
+        <h3>
+          Normal Hangman, but you're actually learning new words.
+          <br />(<span class="pretty">Python</span>) <br /><br />
+          <a href="https://github.com/KCSquid/hangman" target="_blank" rel="noreferrer">View Repo</a>
+        </h3>
+      </div>
+      <div class="project">
+        <h1>Unbeatable TicTacToe</h1>
+        <h3>
+          Unbeatable TicTacToe game using the minimax algorithm.
+          <br />(<span class="pretty">HTML/CSS/JS</span>) <br /><br />
+          <a href="https://tictactoe.kcsquid.xyz"><!--
               <div class="thumbnail"></div>
-              --></a
-            >
-            <a href="https://tictactoe.kcsquid.xyz">View Website</a>
-          </h3>
-        </div>
-        <div class="project">
-          <h1>Connect 4 AI</h1>
-          <h3>
-            Classic Connect 4 game made in C++ with a minimax based AI Player.
-            <br />(<span class="pretty">C++</span>) <br /><br />
-            <a
-              href="https://github.com/KCSquid/connect4-AI"
-              target="_blank"
-              rel="noreferrer"
-              >View Repo</a
-            >
-          </h3>
-        </div>
-        <div class="project">
-          <h1>Snake Game</h1>
-          <h3>
-            The very well known (classic), retro Snake Game. In Python
-            naturally. <br />(<span class="pretty">Pygame</span>) <br /><br />
-            <a
-              href="https://github.com/KCSquid/snake-game"
-              target="_blank"
-              rel="noreferrer"
-              >View Repo</a
-            >
-          </h3>
-        </div>
-        <div class="project">
-          <h1>Z-- Programming Language</h1>
-          <h3>
-            Z--, the Gen Z slang [compiled] programming language. <br />(<span
-              class="pretty"
-              >C++ & Assembly</span
-            >) <br /><br />
-            <a
-              href="https://github.com/KCSquid/Z--"
-              target="_blank"
-              rel="noreferrer"
-              >View Repo</a
-            >
-          </h3>
-        </div>
-        <div class="project">
-          <h1>Portfolio</h1>
-          <h3>
-            A website for my whole developer portfolio & projects <br />(<span
-              class="pretty"
-              >HTML/CSS/JS</span
-            >) <br /><br />
-            <a role="button" onclick="elScroll('#bubbles')" class="underline"
-              >You're already here!</a
-            >
-          </h3>
-        </div>
-        <div class="contactLeft">
-          <h2>Contact Info</h2>
-          <div class="secContainer">
-            <div class="sec">
-              <h3>
-                Email me &ThickSpace;<i class="fa-solid fa-paper-plane"></i>
-              </h3>
-              <h2>
-                <span class="pretty-alt"
-                  ><a href="mailto:kcs@kcsquid.xyz">kcs@kcsquid.xyz</a></span
-                >
-              </h2>
-            </div>
-            <br />
-            <div class="sec">
-              <h3>
-                Socials &ThickSpace;<i
-                  class="fa-solid fa-share-from-square"
-                ></i>
-              </h3>
-              <div class="socials">
-                <a
-                  href="https://github.com/KCSquid/"
-                  target="_blank"
-                  rel="noreferrer"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  href="https://www.instagram.com/kcsquid/"
-                  target="_blank"
-                  rel="noreferrer"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-                <a
-                  href="https://x.com/KCSquid_"
-                  target="_blank"
-                  rel="noreferrer"
-                  ><i class="fa-brands fa-x-twitter"></i
-                ></a>
-                <a
-                  href="https://www.tiktok.com/@kcsquid.0"
-                  target="_blank"
-                  rel="noreferrer"
-                  ><i class="fa-brands fa-tiktok"></i
-                ></a>
-                <a
-                  href="https://stackoverflow.com/users/14709272/kingcodesquid"
-                  target="_blank"
-                  rel="noreferrer"
-                  ><i class="fa-brands fa-stack-overflow"></i
-                ></a>
-              </div>
+              --></a>
+          <a href="https://github.com/KCSquid/tictactoe.kcsquid.xyz" target="_blank" rel="noreferrer">View Repo</a>
+          <br />
+          <a href="https://tictactoe.kcsquid.xyz" target="_blank" rel="noreferrer">View Website (Play!)</a>
+        </h3>
+      </div>
+      <div class="project">
+        <h1>Connect 4 AI</h1>
+        <h3>
+          Classic Connect 4 game with a minimax based AI Player and customizable difficulty.
+          <br />(<span class="pretty">Typescript & React</span>) <br /><br />
+          <a href="https://github.com/KCSquid/connect4.kcsquid.xyz" target="_blank" rel="noreferrer">View Repo</a>
+          <br />
+          <a href="https://connect4.kcsquid.xyz" target="_blank" rel="noreferrer">View Website (Play!)</a>
+        </h3>
+      </div>
+      <div class="project">
+        <h1>Snake Game</h1>
+        <h3>
+          The very well known (classic), retro Snake Game. In Python
+          naturally. <br />(<span class="pretty">Pygame</span>) <br /><br />
+          <a href="https://github.com/KCSquid/snake-game" target="_blank" rel="noreferrer">View Repo</a>
+        </h3>
+      </div>
+      <div class="project">
+        <h1>Z-- Programming Language</h1>
+        <h3>
+          Z--, the Gen Z slang [compiled] programming language. <br />(<span class="pretty">C++ & Assembly</span>)
+          <br /><br />
+          <a href="https://github.com/KCSquid/Z--" target="_blank" rel="noreferrer">View Repo</a>
+        </h3>
+      </div>
+      <div class="project">
+        <h1>Portfolio</h1>
+        <h3>
+          A website for my whole developer portfolio & projects <br />(<span class="pretty">HTML/CSS/JS</span>)
+          <br /><br />
+          <a role="button" onclick="elScroll('#bubbles')" class="underline">You're already here!</a>
+        </h3>
+      </div>
+      <div class="contactLeft">
+        <h2>Contact Info</h2>
+        <div class="secContainer">
+          <div class="sec">
+            <h3>
+              Email me &ThickSpace;<i class="fa-solid fa-paper-plane"></i>
+            </h3>
+            <h2>
+              <span class="pretty-alt"><a href="mailto:kcs@kcsquid.xyz">kcs@kcsquid.xyz</a></span>
+            </h2>
+          </div>
+          <br />
+          <div class="sec">
+            <h3>
+              Socials &ThickSpace;<i class="fa-solid fa-share-from-square"></i>
+            </h3>
+            <div class="socials">
+              <a href="https://github.com/KCSquid/" target="_blank" rel="noreferrer"><i
+                  class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/kcsquid/" target="_blank" rel="noreferrer"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://x.com/KCSquid_" target="_blank" rel="noreferrer"><i
+                  class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.tiktok.com/@kcsquid.0" target="_blank" rel="noreferrer"><i
+                  class="fa-brands fa-tiktok"></i></a>
+              <a href="https://stackoverflow.com/users/14709272/kingcodesquid" target="_blank" rel="noreferrer"><i
+                  class="fa-brands fa-stack-overflow"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="copyright">
+  </div>
+  <!-- <div class="copyright">
       <p>
         Copyright © Jahvon Cockburn (2024-2025) &shy; | &shy; Thanks for
         visiting! &shy;
         <i class="fa-solid fa-heart"></i>
       </p>
     </div> -->
-    <div class="settings" role="button" onclick="showSettings()">
-      <i class="fa-solid fa-gear"></i>
+  <div class="settings" role="button" onclick="showSettings()">
+    <i class="fa-solid fa-gear"></i>
+  </div>
+  <div class="settingsMenu">
+    <div class="setting">
+      <h2>Mouse Glow</h2>
+      <label for="mouseGlow">Enable the glowing effect that follows the mouse</label>
+      <input type="checkbox" id="mouseGlow" checked />
     </div>
-    <div class="settingsMenu">
-      <div class="setting">
-        <h2>Mouse Glow</h2>
-        <label for="mouseGlow"
-          >Enable the glowing effect that follows the mouse</label
-        >
-        <input type="checkbox" id="mouseGlow" checked />
-      </div>
-      <button id="closeSettings" class="close-btn" onclick="hideSettings()">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
-  </body>
+    <button id="closeSettings" class="close-btn" onclick="hideSettings()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+</body>
+
 </html>
